@@ -1,0 +1,62 @@
+/* Centering everything */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Styling the game board */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Tic-Tac-Toe Grid */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+/* Individual cell styling */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+/* Hover effect */
+.cell:hover {
+    background-color: #ddd;
+}
+
+/* Status message */
+#status {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+/* Restart button */
+#reset {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#reset:hover {
+    background-color: #218838;
+}
